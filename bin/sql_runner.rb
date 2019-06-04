@@ -7,17 +7,17 @@ class SQLRunner
   end
 
   def execute_create_file
-    sql = File.read("lib/create.sql")
+    sql = File.read('lib/create.sql')
     @db.execute_batch(sql)
   end
 
   def execute_insert_file
-    sql = File.read("lib/insert.sql")
+    sql = File.read('lib/insert.sql')
     @db.execute_batch(sql)
   end
 
   def execute_select_file
-    sql = File.read("lib/select.sql")
+    sql = File.read('lib/select.sql')
     @db.execute_batch(sql)
   end
 
